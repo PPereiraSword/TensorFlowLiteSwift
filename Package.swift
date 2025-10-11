@@ -7,14 +7,21 @@ let package = Package(
     products: [
         .library(
             name: "TensorFlowLiteSwift",
-            targets: ["TensorFlowLite"]),
+            targets: ["TensorFlowLite"]
+        ),
     ],
     dependencies: [
-        .package(url: "https://github.com/jonathaplima/TensorFlowLiteC.git", exact: "0.0.5"),
+        .package(
+            url: "https://github.com/jonathaplima/TensorFlowLiteC.git",
+            exact: "0.0.5"
+        ),
     ],
     targets: [
         .target(
             name: "TensorFlowLite",
-            dependencies: ["TensorFlowLiteC"]),
+            dependencies: [
+                .product(name: "TensorFlowLiteC", package: "TensorFlowLiteC")
+            ]
+        ),
     ]
 )
