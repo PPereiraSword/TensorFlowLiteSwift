@@ -13,7 +13,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/jonathaplima/TensorFlowLiteC.git",
-            exact: "0.0.5"
+            exact: "0.0.6"
         ),
     ],
     targets: [
