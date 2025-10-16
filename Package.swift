@@ -12,7 +12,7 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/jonathaplima/TensorFlowLiteC.git",
+            url: "https://github.com/PPereiraSword/TensorFlowLiteC",
             exact: "0.0.6"
         ),
     ],
